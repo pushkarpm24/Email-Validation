@@ -5,7 +5,7 @@ shopt -s extglob
 # Author: Pushkar Morey
 # Date: 26 March 2020 
 
-EMAIL_PATTERN="abc[.][a-zA-Z]*@bridgelabz[.]co[.][a-zA-Z]+"
+EMAIL_PATTERN="[a-zA-Z]*[.][a-zA-Z]*@bridgelabz([.][a-zA-Z]+)+"
 
 read -p "Enter Email-id " email
 	if [[ $email =~ $EMAIL_PATTERN ]]; then
